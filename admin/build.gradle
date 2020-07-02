@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+    id 'io.freefair.lombok' version '5.0.1'
+    id 'org.springframework.boot' version '2.2.1.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+}
+
+group 'org.petex'
+version '1.0-SNAPSHOT'
+
+dependencies {
+    compile project(':model')
+
+    compile 'org.springframework.boot:spring-boot-starter'
+    compile 'org.springframework.boot:spring-boot-starter-web'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
